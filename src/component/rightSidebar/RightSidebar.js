@@ -1,5 +1,5 @@
 import React , {useState} from "react";
-import {Container,List,ListItem,Typography,makeStyles,ListItemText} from "@material-ui/core";
+import {Container,List,ListItem,makeStyles,ListItemText} from "@material-ui/core";
 import HireDialog from "../Dialog/HireDialog";
 import ContactDialog from "../Dialog/ContactDialog";
 const style = makeStyles((theme)=>({

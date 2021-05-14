@@ -2,7 +2,6 @@ import React , {useState} from "react";
 import {makeStyles,Typography,Dialog,DialogTitle,DialogContent,Button,Grid} from "@material-ui/core";
 import CustomTextField from "../../reusable/textField";
 import Firebase from "firebase";
-import {firestore} from "../../firebase/FirebaseConfig";
 import Toast from "../../reusable/toast";
 
 const style = makeStyles((theme)=>({
