@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.8075b00a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.181d1db4.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.181d1db4.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e0a52e91.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e0a52e91.js.map",
+    "static/js/2.6573f3f1.chunk.js": "/Portfolio/static/js/2.6573f3f1.chunk.js",
+    "static/js/2.6573f3f1.chunk.js.map": "/Portfolio/static/js/2.6573f3f1.chunk.js.map",
+    "static/js/3.9ed552e6.chunk.js": "/Portfolio/static/js/3.9ed552e6.chunk.js",
+    "static/js/3.9ed552e6.chunk.js.map": "/Portfolio/static/js/3.9ed552e6.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.8075b00a.chunk.css.map": "/Portfolio/static/css/main.8075b00a.chunk.css.map",
+    "static/js/2.6573f3f1.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.6573f3f1.chunk.js.LICENSE.txt",
+    "static/media/Card-Img.63f07c49.png": "/Portfolio/static/media/Card-Img.63f07c49.png",
+    "static/media/LandingPage.css": "/Portfolio/static/media/LandingPage1.b6d08883.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0a52e91.js",
+    "static/js/2.6573f3f1.chunk.js",
+    "static/css/main.8075b00a.chunk.css",
+    "static/js/main.181d1db4.chunk.js"
+  ]
+}
