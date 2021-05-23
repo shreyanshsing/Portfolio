@@ -2,15 +2,31 @@ import {withStyles,ListItem} from "@material-ui/core";
 
 const CustomListItem = withStyles((theme)=>({
     root:{
-        width:'fit-content',
-        background:'#333333',
+        width:'inherit',
         paddingRight:'5%',
-        borderRadius:'10px 10px 50px 10px',
-        margin:'1%',
-        boxShadow:'2px 2px 3px black'
+        margin:'2%',
+        boxShadow:'4px 4px 5px lightgrey',
+        borderRadius:'10px',
+        '& .MuiListItemText-primary':{
+            fontWeight:"300",
+            fontSize:'18px',
+            color:'#333333',
+        },
+        '&$selected':{
+            color:"#002C83",
+            backgroundColor:"#DEE0E2",
+        }
     },
-    divider:{
-        color:'whitesmoke'
+    selected:{
+        color:"#002C83",
+        '& .MuiListItemText-primary':{
+            fontWeight:"bold",
+            color:"#002C83",
+        },
+        '& .MuiListItemIcon-root':{
+            color:"#002C83",
+            fontSize:100
+        },
     }
 }))(ListItem);
 

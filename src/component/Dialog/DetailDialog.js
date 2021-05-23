@@ -7,11 +7,11 @@ import Img from "./Card-Img.png";
 const style = makeStyles((theme)=>({
     container:{
         opacity:0.9,
-        background:'black'
+        background:'whitesmoke'
     },
     paper:{
-        color:'whitesomke',
-        backgroundImage:`linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0, 0.4)),url(${Img})`,
+        color:'#333333',
+        backgroundImage:`linear-gradient(rgba(255, 255, 255,0.5), rgba(255, 255, 255, 0.6)),url(${Img})`,
         position:'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -61,7 +61,7 @@ const DetailDialog = ({open,setOpen}) => {
                     <Grid container spacing={3}>
                         <Grid item sm={6} xs={4}></Grid>
                         <Grid item sm={6} xs={8}>
-                            <Typography variant="h5" style={{color:'whitesmoke'}} gutterBottom>Great let's begin</Typography>
+                            <Typography variant="h5" gutterBottom>Great let's begin</Typography>
                         </Grid>
                         <Grid item sm={6} xs={4}></Grid>
                         <Grid item sm={6} xs={8}>
