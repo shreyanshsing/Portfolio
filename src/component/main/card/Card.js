@@ -10,46 +10,23 @@ import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfie
 
 const style = makeStyles((theme)=>({
     card:{
+        backgroundImage:'linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.8))',
         padding:'2%',
         borderRadius:'10px',
         maxHeight:'300px',
-        minHeight:'230px'
+        minHeight:'230px',
+        color:'white'
     },
     cardContent:{
         textAlign:'justify'
     },
     cardActions:{
+        display:'flex',
         alignItems:'center',
-        justifyContent:'flex-start',
+        justifyContent:'center',
     }
 }))
-export const Card1 = () => {
-    const classes = style();
-    const [open,setOpen] = useState(false);
-    return(
-        <>
-        <Card raised className={classes.card}>
-            <CardHeader
-                title="Your self"
-                subheader="like visiting site , portfolio"
-                titleTypographyProps={{
-                    color:'primary',
-                    component:'h4'
-                }}
-            />
-            <CardContent className={classes.cardContent}>
-                <Typography variant="body1" gutterBottom>get your self a quality website at very reasonable prices.</Typography>
-            </CardContent>
-            <CardActions className={classes.cardActions}>
-                <Button color="primary" variant="contained" onClick={()=>setOpen(true)}>Get it done</Button> 
-            </CardActions>
-        </Card>
-        {
-            open ? <DetailDialog open={open} setOpen={setOpen}/> : null
-        }
-        </>
-    )
-}
+
 
 export const Card2 = () => {
     const classes = style();
@@ -58,18 +35,18 @@ export const Card2 = () => {
         <>
         <Card raised className={classes.card}>
             <CardHeader
-                title="Your Bussiness"
-                subheader="like for your beauty product , art or anything"
+                title="Meeting Schedule"
+                subheader="I will try to get back to you ASAP"
                 titleTypographyProps={{
                     color:'primary',
                     component:'h4'
                 }}
             />
             <CardContent className={classes.cardContent}>
-                <Typography variant="body1" gutterBottom>Boot your game with user friendly, fast and amazing websites. </Typography>
+                <Typography variant="body1" gutterBottom>Boot your game with my services and lets fly together. </Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <Button color="primary" variant="contained" onClick={()=>setOpen(true)}>Get it done</Button> 
+                <Button color="primary" variant="contained" onClick={()=>setOpen(true)}>Schedule</Button> 
             </CardActions>
         </Card>
         {
@@ -81,10 +58,6 @@ export const Card2 = () => {
 
 export const ProjectCard = (props) => {
     const classes = style();
-
-    const handleVisit = (link) => {
-        window.location.href = link;
-    }
     return(
         <Card raised className={classes.card}>
             <CardHeader
@@ -98,7 +71,7 @@ export const ProjectCard = (props) => {
                 <Typography variant="body1" gutterBottom>{props.data.desc}</Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <Button color="primary" variant="text" onClick={()=>handleVisit(props.data.link)}>Visit</Button> 
+                <Button color="primary" style={{color:'white'}} variant="text" component="a" href={props.data.link} target="_blank" rel="nonreferrer">Visit</Button> 
             </CardActions>
         </Card>
     )
