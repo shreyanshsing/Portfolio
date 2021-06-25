@@ -19,7 +19,7 @@ const style = makeStyles((theme)=>({
         color:'whitesmoke',
         fontFamily: "'Montserrat', sans-serif",
         transition:'0.5s',
-        ['@media (max-width:780px)']:{
+        [theme.breakpoints.down('md')]:{
             backgroundImage:`url(${Mob})`,
             paddingTop:"15%",
             paddingLeft:"5%",
@@ -48,7 +48,7 @@ const style = makeStyles((theme)=>({
     profile:{
         width:theme.spacing(20),
         height:theme.spacing(20),
-        ['@media (max-width:780px)']:{
+        [theme.breakpoints.down('md')]:{
             width:theme.spacing(15),
             height:theme.spacing(15),
         }
@@ -64,12 +64,12 @@ const style = makeStyles((theme)=>({
 
 const LandingPage = () => {
     const classes = style();
-    const data = ['designer','developer','freelancer'];
     const [string,setString] = React.useState('');
     const [count,setCount] = React.useState(0);
 
     React.useEffect(()=>{
         window.setTimeout(()=>{
+            const data = ['designer','developer','freelancer'];
             setString(data[count]);
             setCount(count === data.length-1 ? 0 : count+1);
         },'1500');
